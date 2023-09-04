@@ -1,75 +1,166 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-
 <head>
-	<title>HTML Calculator</title>
-
-	<!-- For styling -->
-	<style>
-		table {
-			border: 1px solid black;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		input[type="button"] {
-			width: 100%;
-			padding: 20px 40px;
-			background-color: green;
-			color: white;
-			font-size: 24px;
-			font-weight: bold;
-			border: none;
-			border-radius: 5px;
-		}
-		
-		input[type="text"] {
-			padding: 20px 30px;
-			font-size: 24px;
-			font-weight: bold;
-			border: none;
-			border-radius: 5px;
-			border: 2px solid black;
-		}
-	</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {margin: 0.0px 146.3px 0.0px 146.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000}
+    td.td1 {width: 383.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 95.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 125.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 125.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
 </head>
-
 <body>
-
-	<!-- Create table -->
-	<table id="calcu">
-		<tr>
-			<td colspan="3">
-				<input type="text" id="result">
-			</td>
-			<td><input type="button" value="c"></td>
-		</tr>
-
-		<tr>
-			<td><input type="button" value="1"></td>
-			<td><input type="button" value="2"></td>
-			<td><input type="button" value="3"></td>
-			<td><input type="button" value="/"></td>
-		</tr>
-		<tr>
-			<td><input type="button" value="4"></td>
-			<td><input type="button" value="5"></td>
-			<td><input type="button" value="6"></td>
-			<td><input type="button" value="*"></td>
-		</tr>
-		<tr>
-			<td><input type="button" value="7"></td>
-			<td><input type="button" value="8"></td>
-			<td><input type="button" value="9"></td>
-			<td><input type="button" value="-"></td>
-		</tr>
-		<tr>
-			<td><input type="button" value="0"></td>
-			<td><input type="button" value="."></td>
-			<td><input type="button" value="="></td>
-			<td><input type="button" value="+"></td>
-		</tr>
-	</table>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td colspan="3" valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+        <p class="p1"><span class="s1">&lt;html&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+        <p class="p1"><span class="s1">&lt;head&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;title&gt;HTML Calculator&lt;/title&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;!-- For styling --&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;style&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>table {</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border: 1px solid black;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>margin-left: auto;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>margin-right: auto;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+        <p class="p2"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>input[type="button"] {</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>width: 100%;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>padding: 20px 40px;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>background-color: green;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>color: white;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 24px;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-weight: bold;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border: none;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border-radius: 5px;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+        <p class="p2"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>input[type="text"] {</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>padding: 20px 30px;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 24px;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-weight: bold;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border: none;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border-radius: 5px;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border: 2px solid black;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;/style&gt;</span></p>
+        <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+        <p class="p1"><span class="s1">&lt;body&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;!-- Create table --&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;table id="calcu"&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td colspan="3"&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;input type="text" id="result"&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="c"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/tr&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="1"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="2"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="3"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="/"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="4"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="5"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="6"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="*"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="7"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="8"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="9"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="-"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="0"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="."&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="="&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;td&gt;&lt;input type="button" value="+"&gt;&lt;/td&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/tr&gt;</span></p>
+        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;/table&gt;</span></p>
+        <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+        <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 </body>
-
 </html>
